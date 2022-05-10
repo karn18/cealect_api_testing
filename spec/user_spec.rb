@@ -24,7 +24,21 @@ describe "User" do
     end
   end
 
-  # describe "Technician" do
-  #   assert "a", "a"
-  # end
+  describe "Technician" do
+    it "Signin" do
+      response = signin(TECHNICIAN)
+      # puts response.status
+      data = ActiveSupport::HashWithIndifferentAccess.new(**JSON.parse(response.body))
+      puts data
+      expect(response.code).to eq(200)
+      expect(data).to include(:token)
+      expect(data).to include(:user)
+
+      user = data[:user]
+      expect(user[:display_name]).to eq("กานต์ ถิรสุนทร")
+      # expect(user[:is_telephone_verified]).to be_truthy
+      # expect(user[:is_email_verified]).to be_truthy
+      expect(user[:technician_type]).to be_nil
+    end
+  end
 end
