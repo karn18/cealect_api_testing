@@ -17,7 +17,9 @@ SUB_DISTRICT_URL = "#{BASE_URL}/api/common/sub-district/"
 MENU_LIST_URL = "#{BASE_URL}/api/service/menu/"
 SUB_MENU_LIST_URL = "#{BASE_URL}/api/service/sub-menu/"
 
-TECHNICIAN_LIST = "#{BASE_URL}/api/customer/technician-detail/"
+TECHNICIAN_LIST_URL = "#{BASE_URL}/api/customer/technician-detail/"
+
+TECHNICIAN_URL = "#{BASE_URL}/api/technician/technician/"
 
 # Available users
 USER = { email: "karn@hey.com", password: "0611625983" }
