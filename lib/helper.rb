@@ -16,6 +16,7 @@ SUB_DISTRICT_URL = "#{BASE_URL}/api/common/sub-district/"
 
 MENU_LIST_URL = "#{BASE_URL}/api/service/menu/"
 SUB_MENU_LIST_URL = "#{BASE_URL}/api/service/sub-menu/"
+SERVICE_MENU_LIST_URL = "#{BASE_URL}/api/service/service/"
 
 TECHNICIAN_LIST_URL = "#{BASE_URL}/api/customer/technician-detail/"
 
