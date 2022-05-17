@@ -26,7 +26,7 @@ describe "Menu" do
     # puts "#{SUB_MENU_LIST_URL}/#{first_menu_id}/"
     response = HTTP.auth("Bearer #{@token}").get("#{SUB_MENU_LIST_URL}/#{first_menu_id}/")
     data = JSON.parse(response.body).collect { |i| ActiveSupport::HashWithIndifferentAccess.new(i) }
-    # puts data
+    puts data
     expect(data).not_to be_nil
     
     @first_sub_menu = data[0]
@@ -40,10 +40,10 @@ describe "Menu" do
 
   it "Service Menu List" do
     first_menu_id = "8a1fcb16-6072-42d8-b7f6-f25d46d0d3bb"
-    puts "#{SERVICE_MENU_LIST_URL}#{first_menu_id}/"
+    # puts "#{SERVICE_MENU_LIST_URL}#{first_menu_id}/"
     response = HTTP.auth("Bearer #{@token}").get("#{SERVICE_MENU_LIST_URL}#{first_menu_id}/")
     data = JSON.parse(response.body).collect { |i| ActiveSupport::HashWithIndifferentAccess.new(i) }
-    # puts data
+    puts data
     expect(data).not_to be_nil
     
     @service = data[0]
