@@ -23,7 +23,11 @@ TECHNICIAN_LIST_URL = "#{BASE_URL}/api/customer/technician-detail/"
 TECHNICIAN_URL = "#{BASE_URL}/api/technician/technician/"
 TECHNICIAN_ROLE_LIST = "#{BASE_URL}/api/technician/role-list/"
 
+# Customer Service
 SERVICE_REQUEST_URL = "#{BASE_URL}/api/customer/service-request/"
+CREATE_IMAGE_FOR_SERVICE_URL = "#{BASE_URL}/api/customer/service-request-image/"
+TECHINCIAN_FOR_SERVICE_URL = "#{BASE_URL}/api/customer/technician-list/"
+SELECT_TECHNICIAN_FOR_SERVICE_URL = "#{BASE_URL}/api/customer/select-technician/"
 
 # Available users
 USER = { email: "karn@hey.com", password: "0611625983" }

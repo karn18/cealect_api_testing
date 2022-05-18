@@ -9,7 +9,7 @@ describe "Technician" do
   end
 
   it "Update user info" do
-    response = HTTP.auth("Bearer #{@token}").put("#{TECHNICIAN_URL}#{@user[:id]}/", form: {
+    response = HTTP.auth("Bearer #{@token}").put ("#{TECHNICIAN_URL}#{@user[:id]}/", form: {
       first_name: "กานต์",
       profile_picture: HTTP::FormData::File.new("./image.png")  
     })
